@@ -1,0 +1,104 @@
+:root {
+    --black: #001524;
+    --white: #ffffff;
+    --orange: #FF7D00;
+    --orange-dark: #dd6e03;
+    --red: #78290F;
+}
+
+body,
+html {
+    background-color: var(--black);
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 20px;
+    text-align: left;
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--white);
+}
+
+
+form,
+ul {
+    margin: 0 auto;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+input {
+    display: block;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    margin: 200px auto 10px;
+    width: 100%;
+    border: 2px solid transparent;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--orange);
+}
+
+button {
+    background-color: var(--orange);
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color .5s ease-in-out;
+    font-size: 14px;
+    color: var(--white)
+}
+
+button:hover {
+    background-color: var(--orange-dark);
+}
+
+button[id*="removeBtn"] {
+    background-color: var(--red);
+    display: inline-block;
+    width: auto;
+    margin-left: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.error {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--red);
+    padding: 10px;
+    text-align: center;
+}
