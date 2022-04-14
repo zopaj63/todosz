@@ -4,6 +4,7 @@
     --orange: #FF7D00;
     --orange-dark: #dd6e03;
     --red: #78290F;
+    --red-dark: #5b1f0b;
 }
 
 body,
@@ -36,8 +37,13 @@ li {
     position: relative;
     margin-bottom: 10px;
     border-bottom: 1px solid var(--white);
+    overflow: auto;
 }
 
+li span {
+    max-width: 150px;
+    display: inline-block;
+}
 
 form,
 ul {
@@ -83,14 +89,14 @@ button:hover {
     background-color: var(--orange-dark);
 }
 
-button[id*="removeBtn"] {
+.removeBtn {
     background-color: var(--red);
-    display: inline-block;
     width: auto;
-    margin-left: 10px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    float: right;
+}
+
+.removeBtn:hover {
+    background-color: var(--red-dark);
 }
 
 .error {
